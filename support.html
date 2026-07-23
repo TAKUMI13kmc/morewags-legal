@@ -20,6 +20,7 @@
     text-align: center;
   }
   header h1 { font-size: 22px; font-weight: 700; }
+  .app-icon { width: 56px; height: 56px; border-radius: 14px; margin: 0 auto 14px; display: block; box-shadow: 0 4px 14px rgba(0,0,0,0.2); }
   main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
   h2 {
     font-size: 17px;
@@ -31,23 +32,41 @@
   p { margin-bottom: 10px; }
   .card { background: #fff; border-radius: 12px; padding: 16px 18px; margin-top: 12px; }
   a { color: #3E706D; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #5BA4A0; color: #fff; text-decoration: none;
+    padding: 11px 22px; border-radius: 999px; font-weight: 700; font-size: 14px;
+    margin-top: 4px;
+  }
+  .btn-outline { background: #fff; color: #3E706D; border: 1.5px solid rgba(91,164,160,0.5); }
+  .app-info p { margin-bottom: 4px; font-size: 14px; }
+  .app-info .app-name { font-weight: 700; font-size: 15px; color: #3E706D; margin-bottom: 8px; }
   footer { text-align: center; font-size: 12px; color: #8E8E93; padding: 0 20px 40px; }
+  footer .footer-links { margin-top: 6px; }
+  footer a { color: #8E8E93; text-decoration: underline; }
 </style>
 </head>
 <body>
 <header>
+  <img class="app-icon" src="icon.png" alt="Morewags">
   <h1>Morewags サポート</h1>
 </header>
 <main>
   <p>愛犬との毎日を、もっとしっぽが揺れる日々に。</p>
   <p>Morewagsをご利用いただきありがとうございます。</p>
   <p>ご不明な点やご要望がございましたら、お気軽にお問い合わせください。</p>
+  <p>Morewagsは、犬と暮らす中で「もっと記録を簡単にしたい」という思いから開発しました。ご意見・ご要望をいただきながら、少しずつ改善を続けています。</p>
+
+  <div class="card app-info">
+    <p class="app-name">Morewags</p>
+    <p>Version 1.0</p>
+    <p>対応OS：iOS 15.0以降</p>
+    <p>最終更新日：2026年7月</p>
+  </div>
 
   <h2>お問い合わせ</h2>
-  <p>アプリの不具合のご報告、機能のご要望、データ削除のご依頼などは、以下のメールアドレスまでお気軽にご連絡ください。通常2〜3日以内にお返事します。</p>
-  <div class="card">
-    <p>連絡先：<a href="mailto:liverpool13hana@gmail.com">liverpool13hana@gmail.com</a></p>
-  </div>
+  <p>アプリの不具合のご報告、機能のご要望、データ削除のご依頼などは、以下からお気軽にご連絡ください。通常2〜3日以内にお返事します。</p>
+  <a class="btn" href="mailto:liverpool13hana@gmail.com">✉ お問い合わせ</a>
 
   <h2>よくあるご質問</h2>
   <div class="card">
@@ -80,8 +99,11 @@
   </div>
 
   <h2>プライバシーポリシー</h2>
-  <p><a href="./">Morewags プライバシーポリシーはこちら</a></p>
+  <a class="btn btn-outline" href="./">プライバシーポリシー</a>
 </main>
-<footer>© 2026 Morewags</footer>
+<footer>
+  <p>© 2026 Morewags</p>
+  <p class="footer-links"><a href="./">Privacy Policy</a> ・ <a href="./support.html">Support</a></p>
+</footer>
 </body>
 </html>

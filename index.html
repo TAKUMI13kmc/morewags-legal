@@ -22,6 +22,13 @@
   }
   header h1 { font-size: 22px; font-weight: 700; }
   header p { margin-top: 8px; font-size: 13px; opacity: 0.9; }
+  .app-icon { width: 56px; height: 56px; border-radius: 14px; margin: 0 auto 14px; display: block; box-shadow: 0 4px 14px rgba(0,0,0,0.2); }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #5BA4A0; color: #fff; text-decoration: none;
+    padding: 11px 22px; border-radius: 999px; font-weight: 700; font-size: 14px;
+    margin-top: 4px;
+  }
   main {
     max-width: 720px;
     margin: 0 auto;
@@ -65,6 +72,8 @@
     color: #8E8E93;
     padding: 0 20px 40px;
   }
+  footer .footer-links { margin-top: 6px; }
+  footer a { color: #8E8E93; text-decoration: underline; }
   a { color: #3E706D; }
   @media (max-width: 480px) {
     body { font-size: 15px; }
@@ -74,6 +83,7 @@
 </head>
 <body>
 <header>
+  <img class="app-icon" src="icon.png" alt="Morewags">
   <h1>Morewags プライバシーポリシー</h1>
   <p>制定日：2026年7月7日</p>
 </header>
@@ -127,9 +137,12 @@
   <p>本ポリシーに関するお問い合わせは、以下までお願いします。</p>
   <div class="card">
     <p>運営者：Morewags 運営者（個人開発者）</p>
-    <p>連絡先：<a href="mailto:liverpool13hana@gmail.com">liverpool13hana@gmail.com</a></p>
+    <p style="margin-bottom: 0"><a class="btn" href="mailto:liverpool13hana@gmail.com">✉ お問い合わせ</a></p>
   </div>
 </main>
-<footer>© 2026 Morewags</footer>
+<footer>
+  <p>© 2026 Morewags</p>
+  <p class="footer-links"><a href="./">Privacy Policy</a> ・ <a href="./support.html">Support</a></p>
+</footer>
 </body>
 </html>
