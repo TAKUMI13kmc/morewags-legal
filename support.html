@@ -40,7 +40,8 @@
   }
   .btn-outline { background: #fff; color: #3E706D; border: 1.5px solid rgba(91,164,160,0.5); }
   .app-info p { margin-bottom: 4px; font-size: 14px; }
-  .app-info .app-name { font-weight: 700; font-size: 15px; color: #3E706D; margin-bottom: 8px; }
+  .app-info .app-name { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; color: #3E706D; margin-bottom: 8px; }
+  .app-info .app-name img { width: 22px; height: 22px; border-radius: 6px; }
   footer { text-align: center; font-size: 12px; color: #8E8E93; padding: 0 20px 40px; }
   footer .footer-links { margin-top: 6px; }
   footer a { color: #8E8E93; text-decoration: underline; }
@@ -55,18 +56,18 @@
   <p>愛犬との毎日を、もっとしっぽが揺れる日々に。</p>
   <p>Morewagsをご利用いただきありがとうございます。</p>
   <p>ご不明な点やご要望がございましたら、お気軽にお問い合わせください。</p>
-  <p>Morewagsは、犬と暮らす中で「もっと記録を簡単にしたい」という思いから開発しました。ご意見・ご要望をいただきながら、少しずつ改善を続けています。</p>
+  <p>Morewagsは、愛犬との毎日をもっと大切に残したいという思いから生まれました。ご意見・ご要望をいただきながら、少しずつ改善を続けています。</p>
 
   <div class="card app-info">
-    <p class="app-name">Morewags</p>
-    <p>Version 1.0</p>
+    <p class="app-name"><img src="icon.png" alt=""> Morewags</p>
+    <p>Version 1.0.0</p>
     <p>対応OS：iOS 15.0以降</p>
     <p>最終更新日：2026年7月</p>
   </div>
 
   <h2>お問い合わせ</h2>
   <p>アプリの不具合のご報告、機能のご要望、データ削除のご依頼などは、以下からお気軽にご連絡ください。通常2〜3日以内にお返事します。</p>
-  <a class="btn" href="mailto:liverpool13hana@gmail.com">✉ お問い合わせ</a>
+  <a class="btn" href="mailto:liverpool13hana@gmail.com">✉ メールでお問い合わせ</a>
 
   <h2>よくあるご質問</h2>
   <div class="card">
@@ -74,12 +75,16 @@
     <p>A. 原則としてお使いの端末内に保存されます。ログインした場合のみ、引き継ぎのためにクラウドにも保存されます。詳しくは<a href="./">プライバシーポリシー</a>をご覧ください。</p>
   </div>
   <div class="card">
+    <p><strong>Q. データは機種変更できますか？</strong></p>
+    <p>A. できます。アプリ内でログイン（メール認証）していただくと記録データがクラウドに保存され、新しい端末で同じアカウントにログインすることで引き継げます。</p>
+  </div>
+  <div class="card">
     <p><strong>Q. 散歩の計測中、位置情報はいつ使われますか？</strong></p>
     <p>A. 「スタート」を押してから「終了」するまでの間だけです。計測していない間に位置情報を取得することはありません。</p>
   </div>
   <div class="card">
-    <p><strong>Q. データは機種変更できますか？</strong></p>
-    <p>A. できます。アプリ内でログイン（メール認証）していただくと記録データがクラウドに保存され、新しい端末で同じアカウントにログインすることで引き継げます。</p>
+    <p><strong>Q. GPSがうまく計測されません</strong></p>
+    <p>A. 以下をご確認ください。①「設定」アプリ→Morewags→位置情報が「常に」または「Appの使用中」に設定されているか　②屋外の見晴らしの良い場所で計測を開始しているか（屋内・地下・高層ビルの近くはGPSが不安定になりやすいです）　③スタート直後は位置情報の取得に数十秒かかる場合があります。</p>
   </div>
   <div class="card">
     <p><strong>Q. 家族共有はできますか？</strong></p>
@@ -88,10 +93,6 @@
   <div class="card">
     <p><strong>Q. 複数の犬を登録できますか？</strong></p>
     <p>A. 現在は1頭のみの登録に対応しています。複数頭の登録機能は近日追加予定です。</p>
-  </div>
-  <div class="card">
-    <p><strong>Q. GPSがうまく計測されません</strong></p>
-    <p>A. 以下をご確認ください。①「設定」アプリ→Morewags→位置情報が「常に」または「Appの使用中」に設定されているか　②屋外の見晴らしの良い場所で計測を開始しているか（屋内・地下・高層ビルの近くはGPSが不安定になりやすいです）　③スタート直後は位置情報の取得に数十秒かかる場合があります。</p>
   </div>
   <div class="card">
     <p><strong>Q. データ削除したいです</strong></p>
